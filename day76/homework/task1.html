@@ -1,0 +1,146 @@
+<!--1)  შექმენით დივი რომელსაც მიანიჭებთ ტექსტის ზომა 500px მასში მოათავსებთ ერთცალ დივს რომელსაც მიანიჭებთ
+ მნიშვნელობად მისი მშობელი დივიდან გამომდინარე პროცენტს ისე რომ გამოვიდეს 125px ხოლო მასში მოათავსეთ პარაგრაფი 
+რომელსაც ექნება მისი მშობელი დივის 50% ტექსტის ზომა-->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .parent-div {
+            font-size: 500px; 
+            border: 1px solid black; 
+            padding: 20px; 
+        }
+
+       
+        .child-div {
+            font-size: 25%; 
+            border: 1px solid red; 
+            padding: 10px; 
+        }
+
+        
+        .child-div p {
+            font-size: 50%; 
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-div">
+        მშობელი დივი
+        <div class="child-div">
+            შვილობილი დივი
+            <p>ეს არის პარაგრაფი, რომლის ტექსტის ზომა მშობელი დივის 50%-ია.</p>
+        </div>
+    </div>
+</body>
+</html>
+<!--task 2-->
+<!--2) შექმენით საიტი სადაც დაამატებთ ერთ დივს ამ დივს მისცემს სიმაღლეს 700px და სიგანე 1000px ასევე ბექგაუნდის
+ ფერს მუქლურჯს შემდეგ კი ამ დივში მოათავსეთ კიდევ ერთი დივი რომლის სიმაღლე და სიგანე 
+იქნება მისი მშობლის ნახევარი და მიანიჭეთ ყვითელი ფერი-->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* მშობელი დივი */
+        .parent-div {
+            width: 1000px; /* მშობელი დივის სიგანე */
+            height: 700px; /* მშობელი დივის სიმაღლე */
+            background-color: darkblue; /* ბექგაუნდის ფერი */
+            display: flex; /* შვილობილი დივის ცენტრში დასმისთვის */
+            justify-content: center; /* ჰორიზონტალურად ცენტრში */
+            align-items: center; /* ვერტიკალურად ცენტრში */
+            margin: 0 auto; /* ცენტრში განლაგება */
+        }
+
+        /* შვილობილი დივი */
+        .child-div {
+            width: 50%; /* მშობელი დივის 50% სიგანე */
+            height: 50%; /* მშობელი დივის 50% სიმაღლე */
+            background-color: yellow; /* ყვითელი ფერი */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-div">
+        <div class="child-div"></div>
+    </div>
+</body>
+</html>
+<!--task3-->
+<!---->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დივების მაგალითი</title>
+    <style>
+        /* მშობელი დივი */
+        .parent-div {
+            width: 1000px; /* მშობელი დივის სიგანე */
+            height: 700px; /* მშობელი დივის სიმაღლე */
+            background-color: black; /* ბექგაუნდის ფერი */
+            display: flex; /* შვილობილი დივის ცენტრში დასმისთვის */
+            justify-content: center; /* ჰორიზონტალურად ცენტრში */
+            align-items: center; /* ვერტიკალურად ცენტრში */
+            margin: 0 auto; /* ცენტრში განლაგება */
+        }
+
+        /* შვილობილი დივი */
+        .child-div {
+            width: 25%; /* მშობელი დივის 1/4 სიგანე */
+            height: 25%; /* მშობელი დივის 1/4 სიმაღლე */
+            background-color: red; /* წითელი ფერი */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-div">
+        <div class="child-div"></div>
+    </div>
+</body>
+</html>
+<!--task4-->
+<!--  4) შექმენით დივი ამ დივის ზომა იყოს სიგანეში 1000px და სიმაღლე 1000px მასში მოათვსეთ ერთი ფოტო 
+  რომლის ზომები სიგანეში და
+   სიმაღლეში იქნება მისი მშობელი დივის ნახევრის ნახევრი ნახევარი-->
+
+   <!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        
+        .parent-div {
+            width: 1000px; 
+            height: 1000px; 
+            background-color: lightgray; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        }
+
+    
+        .child-img {
+            width: 250px; 
+            height: 250px; 
+            object-fit: cover; 
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-div">
+        <img src="" alt="Your Image" class="child-img">
+    </div>
+</body>
+</html>

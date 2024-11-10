@@ -1,0 +1,134 @@
+<!--: RGB მოდელში თითოეული ფერი წარმოდგენილია სამი ძირითადი კომპონენტის (წითელი, მწვანე და 
+ლურჯი) კომბინაციით. თითოეული კომპონენტი შეიძლება იყოს 0-255 დიაპაზონში, რაც ნიშნავს, რომ შესაძლებელია 256
+ სხვადასხვა ინტენსივობის დონე.
+
+ RGB ფერები ხშირად წარმოდგენილია როგორც სამი ციფრი, მაგალითად, rgb(255, 0, 0) აღნიშნავს სუფთ
+  წითელ ფერს, ხოლო rgb(0, 255, 0) - სუფთა მწვანეს.
+
+ RGB მოდელი მუშაობს დამატებითი შერევის პრინციპით, რაც ნიშნავს, რომ როდესაც ყველა სამი კომპონენტი 
+აქსიმალურად არის გაწვდილი (255), მიიღება თეთრი ფერი (rgb(255, 255, 255)), ხოლო როდესაც ყველა კომპონენტი მ
+ინიმუმზეა (0), მიიღება შავი 
+(rgb(0, 0, 0)).--><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraphs with Colors</title>
+    <style>
+        .p1 { color: rgb(255, 0, 0); background-color: rgb(255, 255, 204); }
+        .p2 { color: rgb(0, 255, 0); background-color: rgb(204, 255, 204); }
+        .p3 { color: rgb(0, 0, 255); background-color: rgb(204, 204, 255); }
+        .p4 { color: rgb(255, 255, 0); background-color: rgb(255, 255, 204); }
+        .p5 { color: rgb(255, 0, 255); background-color: rgb(255, 204, 255); }
+        .p6 { color: rgb(0, 255, 255); background-color: rgb(204, 255, 255); }
+        .p7 { color: rgb(128, 0, 128); background-color: rgb(255, 204, 255); }
+        .p8 { color: rgb(255, 165, 0); background-color: rgb(255, 228, 204); }
+        .p9 { color: rgb(0, 128, 0); background-color: rgb(204, 255, 204); }
+        .p10 { color: rgb(0, 0, 128); background-color: rgb(204, 204, 255); }
+    </style>
+</head>
+<body>
+    <p class="p1">პარაგრაფი 1: წითელი ტექსტი, ღია კრემისფერი ფონით</p>
+    <p class="p2">პარაგრაფი 2: მწვანე ტექსტი, ღია მწვანე ფონით</p>
+    <p class="p3">პარაგრაფი 3: ლურჯი ტექსტი, ღია ლურჯი ფონით</p>
+    <p class="p4">პარაგრაფი 4: ყვითელი ტექსტი, ღია კრემისფერი ფონით</p>
+    <p class="p5">პარაგრაფი 5: ვარდისფერი ტექსტი, ღია ვარდისფერი ფონით</p>
+    <p class="p6">პარაგრაფი 6: ცისფერი ტექსტი, ღია ცისფერი ფონით</p>
+    <p class="p7">პარაგრაფი 7: მურყუმისფერი ტექსტი, ღია ვარდისფერი ფონით</p>
+    <p class="p8">პარაგრაფი 8: ნარინჯისფერი ტექსტი, ღია ნარინჯისფერი ფონით</p>
+    <p class="p9">პარაგრაფი 9: მუქი მწვანე ტექსტი, ღია მწვანე ფონით</p>
+    <p class="p10">პარაგრაფი 10: მუქი ლურჯი ტექსტი, ღია ლურჯი ფონით</p>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <title>Color Selling Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            text-align: center;
+        }
+        
+        .color-box {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            display: inline-block;
+            border: 1px solid #ccc;
+        }
+        
+        .color-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .color-info {
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Color Selling Website</h1>
+        <div class="color-box">
+            <img src="image1.jpg" alt="Color 1">
+            <div class="color-info">
+                <h2>Color 1</h2>
+                <p>RGB: 255, 0, 0</p>
+            </div>
+        </div>
+        <div class="color-box">
+            <img src="image2.jpg" alt="Color 2">
+            <div class="color-info">
+                <h2>Color 2</h2>
+                <p>RGB: 0, 255, 0</p>
+            </div>
+        </div>
+        <div class="color-box">
+            <img src="image3.jpg" alt="Color 3">
+            <div class="color-info">
+                <h2>Color 3</h2>
+                <p>RGB: 0, 0, 255</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ფერადი ასოები</title>
+    <style>
+        .colored-letter {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <span class="colored-letter" style="color: rgb(255, 0, 0);">გ</span>
+        <span class="colored-letter" style="color: rgb(0, 255, 0);">იო</span>
+        <span class="colored-letter" style="color: rgb(0, 0, 255);">რუ</span>
+        <span class="colored-letter" style="color: rgb(255, 255, 0);">ა</span>
+        <span class="colored-letter" style="color: rgb(255, 165, 0);">ნ</span>
+        <span class="colored-letter" style="color: rgb(75, 0, 130);">ი</span>
+        <span class="colored-letter" style="color: rgb(238, 130, 238);">ა</span>
+        <span class="colored-letter" style="color: rgb(128, 0, 128);">შ</span>
+        <span class="colored-letter" style="color: rgb(0, 255, 255);">ვი</span>
+        <span class="colored-letter" style="color: rgb(0, 0, 0);">ძ</span>
+        <span class="colored-letter" style="color: rgb(255, 20, 147);">ი</span>
+    </p>
+</body>
+</html>
